@@ -1,0 +1,26 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Base setup for web projects",
+  "main": "index.js",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "light-server": "2.7.0",
+    "npm-run-all": "4.1.5"
+  },
+  "scripts": {
+    "browser": "wslview http://localhost:4400",
+    "server": "light-server -b localhost -p 4400 -s src -w \"src/**/* # #\"",
+    "start": "run-p server browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samjukes/base.git"
+  },
+  "author": "Sam Jukes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samjukes/base/issues"
+  },
+  "homepage": "https://github.com/samjukes/base#readme"
+}
